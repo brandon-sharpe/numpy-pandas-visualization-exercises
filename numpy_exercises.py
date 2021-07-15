@@ -209,3 +209,44 @@ print("SETUP #4")
 print()
 d = np.array([[90, 30, 45, 0, 120, 180],[45, -90, -30, 270, 90, 0],[60, 45, -45, 90, -45, 180]])
 print(f" The new array is array d \n{d}")
+print()
+
+# Exercise 1 - Find the sine of all the numbers in d
+print(f" The sine of array d are \n{np.sin(d)}")
+print()
+
+# Exercise 2 - Find the cosine of all the numbers in d
+print(f" The cosine of array d are \n{np.cos(d)}")
+print()
+
+# Exercise 3 - Find the tangent of all the numbers in d
+print(f" The tangents of array d are \n{np.tan(d)}")
+print()
+
+# Exercise 4 - Find all the negative numbers in d
+print(f" The negative numbers of array d are \n{d[d<0]}")
+print()
+
+# Exercise 5 - Find all the positive numbers in d
+print(f" The positive numbers of array d are \n{d[d>0]}")
+print()
+
+# Exercise 6 - Return an array of only the unique numbers in d.
+print(f" The unique number of array d are \n{np.unique(d)}")
+print()
+
+# Exercise 7 - Determine how many unique numbers there are in d.
+print(f" There are {len(np.unique(d))} unique number in array d")
+print()
+
+# Exercise 8 - Print out the shape of d.
+print(f" The shape of array d is {d.shape}")
+print()
+
+# Exercise 9 - Transpose and then print out the shape of d.
+print(f" Array d transposed is \n{d.transpose()}")
+print()
+
+# Exercise 10 - Reshape d into an array of 9 x 2
+print(f" Array d reshaped as 9x2 is \n{d.reshape(9,2)}")
+print()
