@@ -3,6 +3,7 @@ import numpy as np
 a = np.array([4, 10, 12, 23, -2, -1, 0, 0, 0, -6, 3, -7])
 print()
 print(f"The array is {a}")
+print()
 # How many negative numbers are there?
 a_negative = a[a<0]
 print(f" There are {len(a[a<0])} negative numbers")
@@ -35,8 +36,8 @@ print(f" The center is {a_center}")
 print()
 
 # Calculate the z-score for each data point. Recall that the z-score is given by:
-from scipy import stats as stats
-print(f" The z- score is {stats.zscore(a)}")
+from scipy import stats 
+print(f" The z- score is \n{stats.zscore(a)}")
 print()
 
 # More numpy excercises
@@ -87,7 +88,7 @@ print()
 print("SETUP #2")
 print()
 b = np.array([[ 3, 4, 5],[6, 7, 8]])
-print(f" The new array is\n {b}")
+print(f" The new array is\n{b}")
 print()
 #  Exercise 1 - refactor the following to use numpy. Use sum_of_b as the variable.
 # sum_of_b = 0
